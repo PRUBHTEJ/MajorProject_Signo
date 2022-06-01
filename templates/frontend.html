@@ -1,0 +1,197 @@
+	<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SIGNO!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#demo">SIGNO in Action</a></li>
+							<li><a href="#one">About SIGNO</a></li>
+							<li><a href="#two">Meet the Team</a></li>
+							<li><a href="#three">Learn More</a></li>
+							<!--<li><a href="elements.html">Elements</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>SIGNO!</h1>
+							<p>American Sign Language (ASL) is the sixth most used language in the US.
+								It presents an interesting opportunity for us to be challenged to create something impressive but also meaningful. SIGNO! is an American Sign Language (ASL) translator built using computer vision and machine learning. </p>
+							<ul class="actions">
+								<li><a href="#one" class="button special">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Demo -->
+						<section id="demo" class="wrapper style3 fullscreen fade-up">
+							<div class="inner">
+								<h1>Try SINGO! Now</h1>
+								<p>An ASL Translator using CV and ML.</p>
+								<span class="image fit"><img src="images/show_A.png" width=1000px alt="Output showing ASL program correctly translating the letter A" /></span>
+								<h2>Running SIGNO! for yourself</h2>
+								<h3>How to download the necessary files</h3>
+								<p>In order to try SIGNO! for yourself, you will need to clone <a href="https://github.com/Utsav22G/ASL-Translator">this GitHub repository</a> to your local machine, download the related packages and run the recognition program</p>
+								<pre><code>$ git clone https://github.com/Utsav22G/ASL-Translator.git
+$ cd ASL-Translator
+$ pip install -r requirements.txt
+$ python3 live_demo.py</code></pre>
+								<p>Once you've gotten this far, you're ready to get going. The program will prompt you to choose a camera; you can use an external camera if you want, but if you are using your computer's default camera you should enter <code>0</code> .
+								You can then follow the prompt to set the background, and begin testing signs to see the program recognize it.</p>
+								<ul class="actions">
+									<li><a href="https://github.com/Utsav22G/ASL-Translator/blob/master/README.md" class="button big fit">README</a></li>
+								</ul>
+							</div>
+						</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>About SINGO!</h2>
+							<p>SIGNO! is a program that can convert symbols from the ASL alphabet into speech. </p>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='signo.jpg') }}" width=900px alt="" class="center" /></a>
+							<div class="features">
+								<section>
+									<span class="icon major fa-american-sign-language-interpreting"></span>
+									<h3>Computer Vision</h3>
+									<p>SIGNO! uses OpenCV to interact with your computer's camera to see what hand genstures are being shown.</p>
+										<ul class="actions">
+											<li><a href="Computer_Vision.html" class="button">Details</a></li>
+										</ul>
+								</section>
+								<section>
+									<span class="icon major fa-desktop"></span>
+									<h3>Machine Learning</h3>
+									<p>In order to recognize what a hand gesture is in the ASL alphabet, we trained a neural net with a database of images showing the signs we care about.
+										Using this training set of data, SIGNO! is able to classify each symbol as whatever letter it is closest to.</p>
+										<ul class="actions">
+											<li><a href="Machine_Learning.html" class="button">Details</a></li>
+										</ul>
+								</section>
+								<section>
+									<span class="icon major fa-comments"></span>
+									<h3>Text-to-Speech</h3>
+									<p>Once the algorithm has decided on what is being shown, we use Google's text-to-speech library (gTTS) to convert the text into spoken words.</p>
+										<ul class="actions">
+											<li><a href="Text_to_Speech.html" class="button">Details</a></li>
+										</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style4 spotlights">
+							<div class="inner">
+								<h2>Meet the Team</h2>
+							</div>
+						<section>-
+							<a href="#" class="image"><img src="{{ url_for('static', filename='prubhtej.jpeg') }}" width="80%" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Prubhtej Singh</h2>
+									<ul class="actions">
+										<li><a href="http://isaacvandor.com/" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='nikhil.jpeg') }}" style="height:50%;" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Nikhil Singh Chauhan</h2>
+									<ul class="actions">
+										<li><a href="https://github.com/dberny/" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='anant.jpeg') }}" width="80%" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Anant Kumar</h2>
+									<ul class="actions">
+										<li><a href="https://github.com/Utsav22G/" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{{ url_for('static', filename='sarthak.jpeg') }}" width="80%" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Sarthak Rajpal</h2>
+									<ul class="actions">
+										<li><a href="https://github.com/Utsav22G/" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<h2>Resources</h2>
+						<ul class="alt">
+							<li><a href="https://opencv.org/" >OpenCV</a>: Computer vision library</li>
+							<li><a href="https://keras.io/" >Keras</a>: Machine Learning Library</li>
+							<li><a href="https://github.com/pndurette/gTTS" >gTTS</a>: Google Text-to-Speech interface</li>
+							<li><a href="https://www.bu.edu/asllrp/" >BU ASLRP</a>: Used to generate dataset of ASL images</li>
+						</ul>
+						<h2>Get in touch</h2>
+						<div class="inner">
+							<form method="POST" action="/" id = "data-form">
+								<input type="submit" value="Run SIGNO!" />
+								</form>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename = 'js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static', filename = 'js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static', filename = 'js/skel.min.js')}}"></script>
+			<script src="{{url_for('static', filename = 'js/util.js')}}"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+
+	</body>
+</html>

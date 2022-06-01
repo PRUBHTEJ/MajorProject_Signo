@@ -29,31 +29,31 @@ class Application:
         self.vs = cv2.VideoCapture(0)
         self.current_image = None
         self.current_image2 = None
-        self.json_file = open("Models\model_new.json", "r")
+        self.json_file = open("Models/model_new.json", "r")
         self.model_json = self.json_file.read()
         self.json_file.close()
 
         self.loaded_model = model_from_json(self.model_json)
-        self.loaded_model.load_weights("Models\model_new.h5")
+        self.loaded_model.load_weights("Models/model_new.h5")
 
-        self.json_file_dru = open("Models\model-bw_dru.json" , "r")
+        self.json_file_dru = open("Models/model-bw_dru.json" , "r")
         self.model_json_dru = self.json_file_dru.read()
         self.json_file_dru.close()
 
         self.loaded_model_dru = model_from_json(self.model_json_dru)
-        self.loaded_model_dru.load_weights("Models\model-bw_dru.h5")
-        self.json_file_tkdi = open("Models\model-bw_tkdi.json" , "r")
+        self.loaded_model_dru.load_weights("Models/model-bw_dru.h5")
+        self.json_file_tkdi = open("Models/model-bw_tkdi.json" , "r")
         self.model_json_tkdi = self.json_file_tkdi.read()
         self.json_file_tkdi.close()
 
         self.loaded_model_tkdi = model_from_json(self.model_json_tkdi)
-        self.loaded_model_tkdi.load_weights("Models\model-bw_tkdi.h5")
-        self.json_file_smn = open("Models\model-bw_smn.json" , "r")
+        self.loaded_model_tkdi.load_weights("Models/model-bw_tkdi.h5")
+        self.json_file_smn = open("Models/model-bw_smn.json" , "r")
         self.model_json_smn = self.json_file_smn.read()
         self.json_file_smn.close()
 
         self.loaded_model_smn = model_from_json(self.model_json_smn)
-        self.loaded_model_smn.load_weights("Models\model-bw_smn.h5")
+        self.loaded_model_smn.load_weights("Models/model-bw_smn.h5")
 
         self.ct = {}
         self.ct['blank'] = 0
